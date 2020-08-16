@@ -11,7 +11,7 @@ class Song
     @genre = genre
     @@count += 1
     @@artists.push(artist) unless @@artists.include?(artist)
-    @@genres.push(genre)
+    @@genres.push(genre) unless @@genres.include?(genre)
   end 
   
   def name
