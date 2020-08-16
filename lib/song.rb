@@ -10,7 +10,8 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    @@artists.push(artist)
+    if @@artists.include?(artist)
+      @@artists.push(artist)
     @@genres.push(genre)
   end 
   
