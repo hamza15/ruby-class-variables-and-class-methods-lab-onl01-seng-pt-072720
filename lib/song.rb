@@ -39,7 +39,9 @@ class Song
   end 
   
   def self.genre_count
-  
+    @@genres.each do |genre|
+      if @@genres.include?
+        @@genre_count[genre] 
   end
   
   def self.artist_count
