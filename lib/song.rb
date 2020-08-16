@@ -12,7 +12,10 @@ class Song
     @@count += 1
     if @@artists.include?(artist)
       @@artists.push(artist)
-    @@genres.push(genre)
+    end
+    if @@genres.include(genre)
+      @@genres.push(genre)
+    end
   end 
   
   def name
