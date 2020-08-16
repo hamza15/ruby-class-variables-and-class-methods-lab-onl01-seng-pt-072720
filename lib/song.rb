@@ -9,8 +9,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    @artists.push(artist)
-    @genres.push(genre)
+
     @@count += 1 
   end 
   
